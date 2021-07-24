@@ -111,7 +111,7 @@ d.addEventListener("click", (e) => {
     if (isDelete) {
       ajax({
         method: "DELETE",
-        url: `http://localhost:3000/santos/${e.target.dataset.id}`, //accedemos al dataset
+        url: `http://localhost:3000/santos/${e.target.dataset.id}`, //acce  demos al dataset
         success: (res) => location.reload(),
         error: (err) =>
           $form.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`),
