@@ -81,7 +81,7 @@ d.addEventListener("submit", (e) => {
       //Update - PUT
       ajax({
         method: "PUT",
-        url: `http://localhost:3000/santos/${e.target.dataset.id}`, //accedemos al id que esta oculto en el formulario
+        url: `http://localhost:3000/santos/${e.target.id.value}`, //accedemos al id que esta oculto en el formulario
         success: (res) => location.reload(),
         error: (err) =>
           $form.insertAdjacentHTML("afterend", `<p><b>${err}</b></p>`),
@@ -134,7 +134,8 @@ d.addEventListener("click", (e) => {
 //Primero se tiene que crear la funcion ajax, ella se crearan todas la configuraciones necesarias para poder ocuparla posteriormente
 //La funcion ajax llevara un options el cual estara conformado por method, URL, success, error y data
 //La siguiente vez que se necesite hacer alguna accion tipo crudse manda a llamar la funcion ajax, se hacen ña configuracion de los parametros que va a llevar
-//Y lo quelas validaciones para cada uno de los casos
+//Y lo de las validaciones para cada uno de los casos
 
 //location.reload() va a recargar el navegador si la peticion es exitosa
 //El e.target para las peticiones de eliminar y actualizar son los botones
+//En el caso de los botones de editar se usa

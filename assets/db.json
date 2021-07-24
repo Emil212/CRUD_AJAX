@@ -1,9 +1,9 @@
 {
   "santos": [
     {
-      "id": 5,
       "nombre": "Ikki",
-      "constelacion": "Fenix"
+      "constelacion": "Felix",
+      "id": 5
     },
     {
       "nombre": "Mu",
@@ -11,8 +11,8 @@
       "id": 6
     },
     {
-      "nombre": "Saga",
-      "constelacion": "Geminis",
+      "nombre": "Seiya",
+      "constelacion": "Pegaso",
       "id": 7
     }
   ],
